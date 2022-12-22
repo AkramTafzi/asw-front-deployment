@@ -1,0 +1,110 @@
+:host ::ng-deep #comments {
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  background-color: #f9f7f7;
+  border-radius: 0.35rem;
+}
+
+:host ::ng-deep .comment {
+  width: 100%;
+  padding: 1rem 0.75rem;
+  display: block;
+  border-bottom: #a0a0a0 1px solid;
+}
+
+:host ::ng-deep .comment-info {
+  display: flex;
+  flex-direction: row;
+}
+
+:host ::ng-deep .ini-comment {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #112d4e;
+  margin-top: 5px;
+  margin-right: 0.7rem;
+  transform: rotate(45deg);
+  border-radius: 0.1rem;
+}
+
+:host ::ng-deep .comment-points,
+:host ::ng-deep .comment-user,
+:host ::ng-deep .comment-date {
+  color: #a0a0a0;
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+:host ::ng-deep .comment-user > span {
+  color: #3f72af;
+}
+
+:host ::ng-deep .comment-body {
+  margin-top: 0.3rem;
+  color: black;
+  font-size: 1.2rem;
+}
+
+:host ::ng-deep .com3 {
+  margin-left: 3rem;
+}
+
+:host ::ng-deep .com6 {
+  margin-left: 6rem;
+}
+
+:host ::ng-deep .com9 {
+  margin-left: 9rem;
+}
+
+:host ::ng-deep .com12 {
+  margin-left: 12rem;
+}
+
+:host ::ng-deep .com15 {
+  margin-left: 15rem;
+}
+
+:host ::ng-deep .com18 {
+  margin-left: 18rem;
+}
+
+:host ::ng-deep .com21 {
+  margin-left: 21rem;
+}
+
+:host ::ng-deep .com24 {
+  margin-left: 24rem;
+}
+
+:host ::ng-deep .com27 {
+  margin-left: 27rem;
+}
+
+:host ::ng-deep .com30 {
+  margin-left: 30rem;
+}
+
+:host ::ng-deep .not-liked {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url("../../assets/heart-regular.svg");
+}
+
+:host ::ng-deep .liked {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url("../../assets/heart-solid.svg");
+}

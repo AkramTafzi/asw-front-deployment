@@ -1,0 +1,89 @@
+#comments {
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  background-color: #f9f7f7;
+  border-radius: 0.35rem;
+}
+
+.comment {
+  width: 100%;
+  padding: 1rem 0.75rem;
+  display: block;
+  /* border-bottom: #a0a0a0 1px solid; */
+}
+
+.comment-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.ini-comment {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #112d4e;
+  margin-top: 5px;
+  margin-right: 0.7rem;
+  transform: rotate(45deg);
+  border-radius: 0.1rem;
+}
+
+.comment-points,
+.comment-user,
+.comment-date {
+  color: #a0a0a0;
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+.comment-user > span {
+  color: #3f72af;
+}
+
+.comment-body {
+  margin-top: 0.3rem;
+}
+
+.comment-text {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.last-sub {
+  border-bottom: none;
+}
+
+.not-liked {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url("../../assets/heart-regular.svg");
+}
+
+.liked {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url("../../assets/heart-solid.svg");
+}
+
+.reply-btn {
+  margin: 0.75rem 0;
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  display: block;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #112d4e;
+  color: white;
+  cursor: pointer;
+}

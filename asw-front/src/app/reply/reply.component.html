@@ -1,0 +1,17 @@
+<div id="reply">
+  <form id="reply-form" class="form-section">
+    <textarea
+      #elem
+      (change)="handleChangeReply(elem.value)"
+      class="textarea-reply"
+      id = "text"
+    ></textarea>
+    <input
+      class="reply-btn"
+      id="reply-button"
+      value="Reply"
+      type="button"
+      (click)="addReply()"
+    />
+  </form>
+</div>

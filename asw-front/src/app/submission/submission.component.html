@@ -1,0 +1,39 @@
+<div class="news-wrapper">
+  <div class="news-upper">
+    <div
+      id="{{ submission?.itemId }}"
+      class="{{ likeClass }}"
+      alt="heart"
+      #elem
+      (click)="likeBtn(elem.id)"
+    ></div>
+    <a class="news-title" href="{{ submission?.link }}">{{
+      submission?.title
+    }}</a>
+    <a class="news-page" href="{{ submission?.page_ }}"
+      >({{ submission?.page_ }})</a
+    >
+  </div>
+  <div class="news-lower">
+    <p class="news-info">
+      {{ points }} points by <a>{{ submission?.username?.username }}</a> at
+      {{ submission?.datePublished }}
+    </p>
+    <p class="news-info news-comments">
+      {{ submission?.comments?.length }} comments
+    </p>
+  </div>
+  <div class="news-body">{{ submission?.text }}</div>
+  <div class="comment-form">
+    <form>
+      <input id= "text" type="text" onchange="changeNewComment(value)" />
+      <input
+        type="button"
+        value="Add comment"
+        class="add-comm-btn"
+        (click)="addComment()"
+      />
+    </form>
+  </div>
+  <div [innerHTML]="getCommentSection()"></div>
+</div>

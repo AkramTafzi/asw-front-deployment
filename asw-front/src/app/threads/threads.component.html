@@ -1,0 +1,30 @@
+<ul *ngFor="let comment of threads" id="comments">
+  <div class="comment">
+    <div class="comment-info">
+      <div
+        id="{{ comment.id }}"
+        alt="heart"
+        #elem
+        (click)="likeBtn(elem.id)"
+        class="{{ likeClass.get(comment.id) }}"
+      ></div>
+      <p class="comment-points">{{ points.get(comment.id) }} points</p>
+      <p class="comment-user">
+        by <span>{{ comment.user.username }}</span>
+      </p>
+      <p class="comment-date">at {{ comment.time }}</p>
+    </div>
+    <div class="comment-body">
+      <p class="comment-text">{{ comment.body }}</p>
+    </div>
+    <div class="comment-reply">
+      <a
+        id="{{ 'rep' + comment.id }}"
+        #elem
+        class="reply-btn"
+        (click)="goToReply(elem.id)"
+        >reply
+      </a>
+    </div>
+  </div>
+</ul>

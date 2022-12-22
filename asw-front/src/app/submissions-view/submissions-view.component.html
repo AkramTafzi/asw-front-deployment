@@ -1,0 +1,15 @@
+<div class="main-container">
+    <ul *ngFor="let new of news" id = "news">
+        <li class="submission">
+            <div class="submission-upper">
+                <a class="submission-title" href="nlink}">{{new.title}}</a>
+                <a *ngIf="new.type == 'url'" class="submission-page" href>{{new.page_}}</a>
+            </div>
+            <div class="submission-lower">
+                <p class="submission-info">{{new.likedBy.length}} points by <a>{{new.username.username}}</a> at
+                    {{new.datePublished}}</p>
+                <p class="submission-info">{{new.comments.length}} comments</p>
+            </div>
+        </li>
+    </ul>
+</div>

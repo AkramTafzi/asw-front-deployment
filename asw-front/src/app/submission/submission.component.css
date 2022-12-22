@@ -1,0 +1,106 @@
+@import "./comments.css";
+
+.news-wrapper {
+  width: 80%;
+  margin: 1rem auto;
+  background-color: #f9f7f7;
+  border-radius: 0.35rem;
+  padding: 2rem;
+}
+
+.news-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.news-page {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #a0a0a0;
+  line-height: 1.75rem;
+}
+
+.news-upper {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.news-lower {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.news-info {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.news-info > a {
+  font-size: 0.9rem;
+  color: #3f72af;
+  margin-right: 0.1rem;
+  line-height: 0;
+}
+
+.news-info > p,
+p.news-info {
+  margin-right: 0.3rem;
+}
+
+.news-body {
+  font-size: 1.15rem;
+  line-height: 0;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 3rem;
+}
+
+.add-comm-btn {
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  margin: 2rem 0;
+  display: block;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #112d4e;
+  color: white;
+  cursor: pointer;
+}
+
+:host ::ng-deep .reply-btn {
+  margin: 0.75rem 0;
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  display: block;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #112d4e;
+  color: white;
+  cursor: pointer;
+}
+
+.not-liked {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url("../../assets/heart-regular.svg");
+}
+
+.liked {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url("../../assets/heart-solid.svg");
+}
