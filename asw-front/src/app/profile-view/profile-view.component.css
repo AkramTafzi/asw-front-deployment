@@ -1,0 +1,69 @@
+.title{
+    font-weight: 300;
+    font-size: 2em;
+}
+.formUserInfo{
+    display: block;
+    background: #F9F7F7;
+    width: 50%;
+    margin:auto;
+    margin-top: 3vw;
+    padding: 1em;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}
+.component{
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.tags{
+    padding-bottom: 0.4em;
+    font-weight: bold;
+}
+label{
+    display: block;
+}
+.checkbox{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+button{
+    background: #112D4E;
+    border: none;
+    border-radius: 0.5em;
+    width:6em;
+    height:2em;
+    transition: 300ms ease-in-out;
+}
+button:hover{
+    background: #06153d;
+    cursor: pointer;
+}
+
+.ulc {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.lic{
+    padding: 14px 16px;
+    text-align: center;
+    background: #112D4E;
+    transition: 300ms ease-in-out;
+}
+.lic:hover{
+    background: #06153d;
+    cursor: pointer;
+}
+.letraH{
+    color: white;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+<article class = "formUserInfo">
+        <div class = row>
+            <div class = "component">
+                <label class = "tags">User</label>
+                <input type="text" id="username" name="name" size="14" value = {{user.username}} readonly>
+            </div>
+            <div class = "component">
+                <label class = "tags">Created</label>
+                <input type="text" id="created" name="name" size="14" value = {{user.created}} readonly>
+            </div>
+        </div>
+        <div class = row>
+            <div class = "component">
+                <label class = "tags">Karma</label>
+                <input type="text" id="karma" name="name" size="14" value = {{user.karma}} readonly>
+            </div>
+            <div class = "component">
+                <label class = "tags">Max Visit</label>
+                <input type="text" id="maxvisit" name="name" value = {{user.maxvisit}} size="14">
+            </div>
+        </div>
+        <div class = row>
+            <div class = "component">
+                <label class = "tags">Min away</label>
+                <input type="text" id="minaway" name="name" value = {{user.minaway}} size="14">
+            </div>
+            <div class = "component">
+                <label class = "tags">Delay</label>
+                <input type="text" id="delay" name="name" size="14" value = {{user.delay}}>
+            </div>
+        </div>
+        <div class = row>
+            <div class = "component">
+                <label class = "tags">About</label>
+                <input type="text" id="about" name="name" size="39" width="40" value = {{user.about}}>
+            </div>
+        </div>
+        <div class = row>
+            <input type="checkbox" id="showdead" value = {{user.showdead}}>
+            <label class = "checkbox">Show Dead</label>
+            <input type="checkbox" id="noprocrast" name="name" value = {{user.noprocrast}}>
+            <label class = "checkbox">No Pro Crast</label>
+        </div>
+        <div class = row>
+                <button type="button" (click)="getInfoUser()" class = "letraH">Update</button>
+        </div>
+        <div class = row>
+            <ul class = ulc>
+               <li class = lic>
+                   <a (click)="getUserSubmissions()" class="letraH">Submissions</a>
+               </li>
+                <li class = lic>
+                    <a class = "letraH" (click) = "getUserComments()">Comments</a>
+                </li>
+                <li class = lic>
+                    <a class = "letraH" (click) = "getVotedSubmissions()">Voted Submissions</a>
+                </li>
+                <li class = lic>
+                    <a class = "letraH" (click) = "getVotedComments()">Voted Comments</a>
+                </li>
+            </ul>
+        </div>
+    </article>

@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: #112d4e;
+  padding: 1vw;
+  width: 100vw;
+  height: 4rem;
+  justify-items: center;
+}
+
+#hacker-news {
+  font-family: "Secular One", sans-serif;
+}
+
+.nav-links {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-item > a,
+.nav-item,
+.nav-item > span {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: 200ms ease-in-out;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-links > .nav-item:hover > a {
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid white;
+}
+
+.nav-log {
+  margin-left: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  text-align: center;
+}
