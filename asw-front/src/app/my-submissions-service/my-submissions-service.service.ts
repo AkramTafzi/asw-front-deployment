@@ -22,7 +22,7 @@ export class MySubmissionsServiceService {
     const params = new HttpParams().set('username', username);
     let news = await this.http
       .get<News[]>(
-        environment.BASE_URL + '/news/user' + `?username=${username}`,
+        "https://asw-back-deployment-production-700e.up.railway.app" + '/news/user' + `?username=${username}`,
         myheaders
       )
       .toPromise();

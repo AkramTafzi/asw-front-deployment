@@ -18,7 +18,7 @@ export class AskService {
 
   public async getAsk(): Promise<News[]> {
     var myheaders = {headers: this.getHeaders()}
-    let ask = await this.http.get<News[]>(environment.BASE_URL + "/ask", myheaders).toPromise();
+    let ask = await this.http.get<News[]>("https://asw-back-deployment-production-700e.up.railway.app" + "/ask", myheaders).toPromise();
     return ask as News[];
   }
 }

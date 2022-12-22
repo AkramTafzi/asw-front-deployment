@@ -74,7 +74,7 @@ export class SubmissionComponent implements OnInit {
     };
 
     if (typeof name === 'string' && typeof key === 'string') {
-      const response = await fetch(environment.BASE_URL + '/news/like', {
+      const response = await fetch("https://asw-back-deployment-production-700e.up.railway.app" + '/news/like', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ export class SubmissionComponent implements OnInit {
     };
 
     const response = await fetch(
-      environment.BASE_URL + '/comment/' + id + '/like',
+      "https://asw-back-deployment-production-700e.up.railway.app" + '/comment/' + id + '/like',
       {
         method: 'PUT',
         headers: {

@@ -60,7 +60,7 @@ export class ThreadsComponent implements OnInit {
     };
 
     const response = await fetch(
-      environment.BASE_URL + '/comment/like',
+      "https://asw-back-deployment-production-700e.up.railway.app" + '/comment/like',
       {
         method: 'PUT',
         headers: {

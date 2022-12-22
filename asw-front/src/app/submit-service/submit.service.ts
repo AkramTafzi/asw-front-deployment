@@ -16,7 +16,7 @@ export class SubmitService {
   public submit(news: any) {
     var myheaders = { headers: this.getHeaders() };
     this.http
-      .post<any>(environment.BASE_URL + '/submit', news, myheaders)
+      .post<any>("https://asw-back-deployment-production-700e.up.railway.app" + '/submit', news, myheaders)
       .subscribe();
   }
 }

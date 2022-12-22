@@ -20,7 +20,7 @@ export class SubmissionService {
   public async getSubmission(id: string): Promise<News> {
     var myheaders = {headers: this.getHeaders()}
     let submission = await this.http
-      .get<News>(environment.BASE_URL + '/news/' + id, myheaders)
+      .get<News>("https://asw-back-deployment-production-700e.up.railway.app" + '/news/' + id, myheaders)
       .toPromise();
     return submission as News;
   }
@@ -28,7 +28,7 @@ export class SubmissionService {
   public async getComments(idNews: string): Promise<Comments> {
     var myheaders = {headers: this.getHeaders()}
     let comment = await this.http
-      .get<Comments>(environment.BASE_URL + '/comment/' + idNews, myheaders)
+      .get<Comments>("https://asw-back-deployment-production-700e.up.railway.app" + '/comment/' + idNews, myheaders)
       .toPromise();
     return comment as unknown as Comments;
   }
@@ -36,7 +36,7 @@ export class SubmissionService {
   public async getCommentaries(idNews: string): Promise<number[]> {
     var myheaders = {headers: this.getHeaders()}
     let comments = await this.http
-      .get<Comments[]>(environment.BASE_URL + '/news/' + idNews + '/comments', myheaders)
+      .get<Comments[]>("https://asw-back-deployment-production-700e.up.railway.app" + '/news/' + idNews + '/comments', myheaders)
       .toPromise();
     return comments as unknown as number[];
   }
@@ -57,7 +57,7 @@ export class SubmissionService {
       }
     }
     console.log(body)
-    const response = await fetch(environment.BASE_URL + '/news/newcomment', {
+    const response = await fetch("https://asw-back-deployment-production-700e.up.railway.app" + '/news/newcomment', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

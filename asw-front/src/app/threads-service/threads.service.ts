@@ -20,7 +20,7 @@ export class ThreadsService {
     var myheaders = {headers: this.getHeaders()}
     let threads = await this.http
       .get<Comments[]>(
-        environment.BASE_URL +
+        "https://asw-back-deployment-production-700e.up.railway.app" +
           '/comment/user/' +
           localStorage.getItem('username'), myheaders
       )

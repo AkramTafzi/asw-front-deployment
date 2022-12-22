@@ -19,7 +19,7 @@ export class ShowService {
 
   public async getShow(): Promise<News[]> {
     var myheaders = {headers: this.getHeaders()}
-    let show = await this.http.get<News[]>(environment.BASE_URL + "/show", myheaders).toPromise();
+    let show = await this.http.get<News[]>("https://asw-back-deployment-production-700e.up.railway.app" + "/show", myheaders).toPromise();
     return show as News[];
   }
 }

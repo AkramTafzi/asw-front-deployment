@@ -19,7 +19,7 @@ export class HomeService {
   public async getNews(): Promise<News[]> {
     var myheaders = {headers: this.getHeaders()}
     let news = await this.http
-      .get<News[]>(environment.BASE_URL + '/news', myheaders)
+      .get<News[]>("https://asw-back-deployment-production-700e.up.railway.app" + '/news', myheaders)
       .toPromise();
     return news as News[];
   }

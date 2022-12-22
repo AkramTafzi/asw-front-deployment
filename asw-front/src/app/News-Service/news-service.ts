@@ -18,7 +18,7 @@ export class NewsService {
 
   public async getNewest(): Promise<News[]>{
     var myheaders = {headers: this.getHeaders()}
-    let news = await this.http.get<News[]>(environment.BASE_URL + "/newest", myheaders).toPromise()
+    let news = await this.http.get<News[]>("https://asw-back-deployment-production-700e.up.railway.app" + "/newest", myheaders).toPromise()
     return news as News[]
   }
 

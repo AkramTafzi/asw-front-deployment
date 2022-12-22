@@ -43,7 +43,7 @@ export class ReplyComponent implements OnInit {
     let id: string | null = localStorage.getItem('reply');
 
     const response = await fetch(
-      environment.BASE_URL + '/news/reply',
+      "https://asw-back-deployment-production-700e.up.railway.app" + '/news/reply',
       {
         method: 'PUT',
         headers: {

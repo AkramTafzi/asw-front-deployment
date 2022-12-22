@@ -22,21 +22,21 @@ export class ProfileService {
     var myheaders = { headers: this.getHeaders() };
     console.log(localStorage.getItem('apiKey') as string);
     let news = await this.http
-      .get<User>(environment.BASE_URL + '/user?username=' + username, myheaders)
+      .get<User>("https://asw-back-deployment-production-700e.up.railway.app" + '/user?username=' + username, myheaders)
       .toPromise();
     return news as User;
   }
 
   public submit(user: any) {
     var myheaders = { headers: this.getHeaders() };
-    this.http.post<any>(environment.BASE_URL + '/user', user, myheaders).subscribe();
+    this.http.post<any>("https://asw-back-deployment-production-700e.up.railway.app" + '/user', user, myheaders).subscribe();
   }
 
   public async getSubmissions(username: string): Promise<News[]> {
     var myheaders = { headers: this.getHeaders() };
     let news = await this.http
       .get<News[]>(
-        environment.BASE_URL + '/news/user?username=' + username,
+        "https://asw-back-deployment-production-700e.up.railway.app" + '/news/user?username=' + username,
         myheaders
       )
       .toPromise();
@@ -47,7 +47,7 @@ export class ProfileService {
     var myheaders = { headers: this.getHeaders() };
     let comments = await this.http
       .get<Comments[]>(
-        environment.BASE_URL + '/comment/user/?username=' + username,
+        "https://asw-back-deployment-production-700e.up.railway.app" + '/comment/user/?username=' + username,
         myheaders
       )
       .toPromise();
@@ -58,7 +58,7 @@ export class ProfileService {
     var myheaders = { headers: this.getHeaders() };
     let news = await this.http
       .get<News[]>(
-        environment.BASE_URL + '/news/liked?username=' + username,
+        "https://asw-back-deployment-production-700e.up.railway.app" + '/news/liked?username=' + username,
         myheaders
       )
       .toPromise();
@@ -69,7 +69,7 @@ export class ProfileService {
     var myheaders = { headers: this.getHeaders() };
     let comments = await this.http
       .get<Comments[]>(
-        environment.BASE_URL + '/comments/liked?username=' + username,
+        "https://asw-back-deployment-production-700e.up.railway.app" + '/comments/liked?username=' + username,
         myheaders
       )
       .toPromise();
